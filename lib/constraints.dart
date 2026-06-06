@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-class PhoneConstraints {
-  static double target = -10.0;       // This is the device's Z position where it's considered "perfectly face down"
-  static double enterLeniency = 1.0;  // If the device's Z position is -9 or -11 we still count it as face down
+class PhoneConstraints {                 // Look, the slashes are perfectly diagonal 😁
+  static double target = -10.0;         // This is the device's Z position where it's considered "perfectly face down"
+  static double enterLeniency = 1.0;   // If the device's Z position is -9 or -11 we still count it as face down
   static double exitLeniency = 2.5;   // If the device's Z position is -2.5 or +2.5 past target, we count it as face down.
   static bool phoneFaceDown = false;
   static StreamSubscription? subscription;  // Imagine *not* knowing what StreamSubscription does :smirk: 😏

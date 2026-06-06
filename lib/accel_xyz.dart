@@ -1,4 +1,3 @@
-import 'package:accel_test/colours.dart';
 import 'package:accel_test/constraints.dart';
 import 'package:accel_test/is_phone_face_down.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,11 +9,7 @@ class AccelXyz extends StatefulWidget {
 
   @override
   State<AccelXyz> createState() => _AccelXyzState();
-
-  
 }
-
-
 
 class _AccelXyzState extends State<AccelXyz> {
 
@@ -46,14 +41,11 @@ class _AccelXyzState extends State<AccelXyz> {
     super.dispose();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colours.background,
       appBar: AppBar(
-        backgroundColor: Colours.onBackground,
-        title: Text('Accelerometer Test', style: TextStyle(color: Colors.white)),
+        title: Text('Accelerometer Test'),
       ),
 
       body: Center(
@@ -85,6 +77,5 @@ class _AccelXyzState extends State<AccelXyz> {
         ),
       ),
     );
-
   }
 }
