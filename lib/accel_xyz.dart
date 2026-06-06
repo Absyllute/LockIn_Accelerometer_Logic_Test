@@ -50,10 +50,7 @@ class _AccelXyzState extends State<AccelXyz> {
 
       body: Center(
         child: DefaultTextStyle(
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24
-          ),
+          style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 24),
           child: Column(
             mainAxisAlignment: .center,
             children: [
